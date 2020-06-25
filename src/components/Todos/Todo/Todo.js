@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux';
 
+import * as actionTypes from '../../../store/actions'
 import classes from './Todo.module.css'
 
 class Todo extends Component {
@@ -14,17 +16,19 @@ class Todo extends Component {
 		})
 	}
 
-	toggleComplete = () => {
+	toggleComplete = (id) => {
 		this.setState({
 			isCompleted: !this.state.isCompleted
 		})
+
+		this.props.onCompletingTask(id)
 	}
 
 	render() {
 		let names = classes.Todo;
 
 		const { isActivated, isCompleted } = this.state;
-		const { name, deleted } = this.props;
+		const { name, deleted, id } = this.props;
 
 		if (isActivated) {
 			names = [classes.Todo, classes.Activated].join(' ')
@@ -37,9 +41,9 @@ class Todo extends Component {
 				</span>
 
 				<span className={classes.CheckboxHolder}>
-					<input id="check-1" type="checkbox" onChange={this.toggleComplete} />
+					<input id={id} type="checkbox" onChange={() => this.toggleComplete(id)} />
 
-					<label htmlFor="check-1"></label>
+					<label htmlFor={id}></label>
 				</span>
 
 				<button onClick={deleted}>
@@ -50,4 +54,13 @@ class Todo extends Component {
 	}
 }
 
-export default Todo
+const mapDispatchToProps = dispatch => {
+	return {
+		onCompletingTask: (id) => dispatch({
+			type: actionTypes.COMPLETE_TASK,
+			id
+		}),
+	}
+}
+
+export default connect(null, mapDispatchToProps)(Todo)
