@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+  <g transform="translate(-312 -364)">
+    <circle data-name="Ellipse 13" cx="17.5" cy="17.5" r="17.5" transform="translate(312 364)" fill="#ffcfcf"/>
+    <g data-name="Group 48">
+      <g data-name="Group 47">
+        <path data-name="Path 94" d="M336.068 375.98h-13.413a.655.655 0 100 1.31h13.413a.655.655 0 100-1.31z" fill="#fb3636"/>
+      </g>
+    </g>
+    <g data-name="Group 50">
+      <g data-name="Group 49">
+        <path data-name="Path 95" d="M334.575 375.98a.655.655 0 00-.655.655v10.43a.836.836 0 01-.835.835h-7.45a.836.836 0 01-.835-.835v-10.43a.655.655 0 10-1.31 0v10.43a2.147 2.147 0 002.145 2.145h7.45a2.147 2.147 0 002.145-2.145v-10.43a.655.655 0 00-.655-.655z" fill="#fb3636"/>
+      </g>
+    </g>
+    <g data-name="Group 52">
+      <g data-name="Group 51">
+        <path data-name="Path 96" d="M330.85 373h-2.98a2.147 2.147 0 00-2.145 2.145v1.49a.655.655 0 001.31 0v-1.49a.836.836 0 01.835-.835h2.98a.836.836 0 01.835.835v1.49a.655.655 0 101.31 0v-1.49A2.147 2.147 0 00330.85 373z" fill="#fb3636"/>
+      </g>
+    </g>
+    <g data-name="Group 54">
+      <g data-name="Group 53">
+        <path data-name="Path 97" d="M327.87 379.705a.655.655 0 00-.655.655v4.47a.655.655 0 001.31 0v-4.47a.655.655 0 00-.655-.655z" fill="#fb3636"/>
+      </g>
+    </g>
+    <g data-name="Group 56">
+      <g data-name="Group 55">
+        <path data-name="Path 98" d="M330.85 379.705a.655.655 0 00-.655.655v4.47a.655.655 0 001.31 0v-4.47a.655.655 0 00-.655-.655z" fill="#fb3636"/>
+      </g>
+    </g>
+  </g>
+</svg>

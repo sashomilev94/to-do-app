@@ -1,0 +1,63 @@
+.OnBoarding {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	text-align: center;
+}
+
+.OnBoarding h3 {
+	margin-bottom: 20px;
+	font-size: 32px;
+}
+
+.OnBoarding p {
+	margin-bottom: 20px;
+}
+
+.OnBoarding form {
+	width: 300px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.OnBoarding__Button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 258px;
+	height: 45px;
+	border: 0;
+	border-radius: 15px;
+	background-image: linear-gradient(to right, #5DE61A, #39A801);
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	transition: opacity .4s;
+}
+
+.OnBoarding__Button:focus {
+	outline: 0;
+}
+
+.OnBoarding__Button:hover {
+	opacity: .75;
+}
+
+.Input {
+	width: 100%;
+	height: 45px;
+	padding: 0 15px;
+	border-radius: 0;
+	margin-bottom: 20px;
+	border: 2px solid #000;
+}
+
+.Input:focus {
+	border-radius: 0;
+	outline-offset: 0;
+	outline: 0;
+}

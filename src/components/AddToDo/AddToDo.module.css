@@ -1,0 +1,45 @@
+.TaskAdder form {
+	display: flex;
+}
+
+.TaskAdder input {
+	width: 75%;
+	height: 45px;
+	padding: 0 15px;
+	border-radius: 0;
+	margin-bottom: 20px;
+	border: 0;
+	box-shadow: 0px 0px 6.64px 0.36px rgba(0, 0, 0, 0.2);
+}
+
+.TaskAdder input:focus {
+	border-radius: 0;
+	outline-offset: 0;
+	outline: 0;
+}
+
+.TaskAdder button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 25%;
+	height: 45px;
+	border: 0;
+	border-radius: 0px;
+	background-image: linear-gradient(to right, #5DE61A, #39A801);
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	transition: opacity .4s;
+}
+
+.TaskAdder button:focus {
+	outline: 0;
+}
+
+.TaskAdder button:hover {
+	opacity: .75;
+}

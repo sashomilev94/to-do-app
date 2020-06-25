@@ -1,0 +1,11 @@
+.TaskContainer {
+	padding: 20px 0;
+}
+
+.NoTask {
+	text-align: center;
+}
+
+.NoTask img {
+	margin-bottom: 10px;
+}
