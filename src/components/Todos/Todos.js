@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component, Fragment } from 'react'
 import { connect } from 'react-redux';
 
 import * as actionTypes from '../../store/actions'
@@ -6,14 +6,37 @@ import classes from './Todos.module.css'
 
 import Todo from './Todo/Todo'
 
-const Todos = props => {
-	return (
-		<ul className={classes.ListHolder}>
-			{props.items.map(item => (
-				<Todo deleted={() => props.onDeleteItem(item.id)} key={item.id} name={item.name} id={item.id} />
-			))}
-		</ul>
-	)
+class Todos extends Component {
+	state = {
+		showActiveTodos: false
+	}
+
+	handleCompletedFilter = () => {
+		this.setState({
+			showActiveTodos: !this.state.showActiveTodos
+		})
+	}
+
+	render() {
+		const { showActiveTodos } = this.state;
+		const { items, onDeleteItem } = this.props;
+
+		const computedItems = showActiveTodos ? items.filter(item => item.completed === showActiveTodos) : items;
+
+		return (
+			<Fragment>
+				<div>
+					<button onClick={this.handleCompletedFilter}>Show Active</button>
+				</div>
+				
+				<ul className={classes.ListHolder}>
+					{computedItems.map(item => (
+						<Todo deleted={() => onDeleteItem(item.id)} key={item.id} name={item.name} id={item.id} />
+					))}
+				</ul>
+			</Fragment>
+		)
+	}
 }
 
 const mapStateToProps = state => {
