@@ -21,7 +21,7 @@ class Todos extends Component {
 		const { showActiveTodos } = this.state;
 		const { items, onDeleteItem } = this.props;
 
-		const computedItems = showActiveTodos ? items.filter(item => item.completed !== showActiveTodos) : items;
+		const computedItems = showActiveTodos ? items.filter(item => item.completed === showActiveTodos) : items;
 
 		return (
 			<Fragment>
