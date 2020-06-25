@@ -1,3 +1,34 @@
 .ListHolder {
 	list-style-type: none; 
 }
+
+.FilterButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.FilterButton button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 3;
+	height: 60px;
+	width: 60px;
+	border: 0;
+	border-radius: 50%;
+	background: linear-gradient(to right, #5DE61A, #39A801);
+	box-shadow: 0px 0px 6.64px 0.36px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 12px;
+	cursor: pointer;
+	transition: opacity .4s;
+}
+
+.FilterButton button:hover {
+	opacity: .75;
+}
+
+.FilterButton button:focus {
+	outline: 0;
+}
