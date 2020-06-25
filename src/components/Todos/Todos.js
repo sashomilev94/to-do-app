@@ -26,7 +26,7 @@ class Todos extends Component {
 		return (
 			<Fragment>
 				<div className={classes.FilterButton}>
-					<button onClick={this.handleCompletedFilter}>Show Active</button>
+					<button onClick={this.handleCompletedFilter}>Show Completed</button>
 				</div>
 				
 				<ul className={classes.ListHolder}>
